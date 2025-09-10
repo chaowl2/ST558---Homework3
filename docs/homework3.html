@@ -289,27 +289,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
                143                 33 </code></pre>
 </div>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>summary_tab <span class="ot">=</span> <span class="fu">data.frame</span>(</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">measure =</span> <span class="fu">names</span>(res_mean),</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">mean =</span> <span class="fu">unname</span>(res_mean),</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">var  =</span> <span class="fu">unname</span>(res_var[<span class="fu">names</span>(res_mean)]),</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">sd   =</span> <span class="fu">unname</span>(res_sd[<span class="fu">names</span>(res_mean)]),</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">min  =</span> <span class="fu">unname</span>(res_min[<span class="fu">names</span>(res_mean)]),</span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">max  =</span> <span class="fu">unname</span>(res_max[<span class="fu">names</span>(res_mean)])</span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>         measure   mean    var    sd min max
-1  treatment_pre 131.60  75.73  8.70 115 151
-2 treatment_post 125.95  79.00  8.89 114 146
-3 treatment_diff   5.65 117.82 10.85 -24  21
-4    placebo_pre 131.90 149.88 12.24 114 152
-5   placebo_post 128.90 124.99 11.18 105 143
-6   placebo_diff   3.00 341.33 18.48 -21  33</code></pre>
-</div>
-</div>
 
 
 </section>
